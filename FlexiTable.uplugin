@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "FlexiTable",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Ashechol",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "FlexiTable",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
