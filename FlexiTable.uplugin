@@ -19,6 +19,11 @@
 			"Name": "FlexiTable",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "FlexiTableEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
 		}
 	]
 }
