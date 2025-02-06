@@ -23,7 +23,7 @@
 		{
 			"Name": "FlexiTableEditor",
 			"Type": "Editor",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "PostEngineInit"
 		}
 	]
 }

@@ -19,7 +19,10 @@ public class FlexiTableEditor : ModuleRules
                 "CoreUObject",
                 "Engine",
                 "Slate",
-                "SlateCore"
+                "SlateCore",
+                "AssetDefinition",
+                "UnrealEd",
+                "FlexiTable"
             }
         );
     }
