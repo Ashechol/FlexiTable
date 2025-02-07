@@ -3,6 +3,7 @@
 
 #include "AssetDefinition_FlexiTable.h"
 #include "FlexiTable.h"
+#include "FlexiTableEditorModule.h"
 
 TConstArrayView<FAssetCategoryPath> UAssetDefinition_FlexiTable::GetAssetCategories() const
 {
@@ -32,7 +33,12 @@ FText UAssetDefinition_FlexiTable::GetAssetDisplayName() const
 
 EAssetCommandResult UAssetDefinition_FlexiTable::OpenAssets(const FAssetOpenArgs& OpenArgs) const
 {
+	FFlexiTableEditorModule& Module = FModuleManager::LoadModuleChecked<FFlexiTableEditorModule>("FlexiTableEditor");
 	
+	for (UFlexiTable* Table : OpenArgs.LoadObjects<UFlexiTable>())
+	{
+		Module.CreateFlexiTableEditor(OpenArgs.GetToolkitMode(), OpenArgs.ToolkitHost, Table);
+	}
 	
-	return EAssetCommandResult::Unhandled;
+	return EAssetCommandResult::Handled;
 }

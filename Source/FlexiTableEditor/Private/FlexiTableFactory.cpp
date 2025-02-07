@@ -10,8 +10,7 @@ UFlexiTableFactory::UFlexiTableFactory()
 	bCreateNew = 1;
 }
 
-UObject* UFlexiTableFactory::FactoryCreateNew(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags,
-                                                  UObject* Context, FFeedbackContext* Warn, FName CallingContext)
+UObject* UFlexiTableFactory::FactoryCreateNew(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn, FName CallingContext)
 {
 	check(InClass->IsChildOf(UFlexiTable::StaticClass()));
 	return NewObject<UFlexiTable>(InParent, InClass, InName, Flags);
